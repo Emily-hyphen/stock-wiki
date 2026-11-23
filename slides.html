@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>股票是什麼？新手第一堂課</title>
+<style>
+:root{--bg:#f5f6f8;--ink:#1d2433;--mute:#5b6577;--line:#d5d9e2;--card:#fff;--up:#c62828;--down:#1b7f4b;--blue:#244a8c;--amber:#7a4e00;--amberbg:#fff0cc;--teal:#0d5f5f;--tealbg:#dcf2ef;--slate:#3f4a5e;--slatebg:#e6e9f0}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:clamp(15px,1.45vw,19px)}
+.slide{display:none;flex-direction:column;min-height:100%;max-width:1040px;margin:0 auto;padding:clamp(20px,4vw,48px) clamp(16px,5vw,72px) 76px}
+.slide.on{display:flex}
+h1{font-size:clamp(30px,5.2vw,56px);line-height:1.2;margin:.2em 0 .4em}
+h2{font-size:clamp(22px,3.2vw,34px);line-height:1.3;margin:0 0 .7em;color:var(--blue)}
+h3{font-size:1.05em;margin:.9em 0 .2em}
+ul{margin:.2em 0;padding-left:1.2em}
+li{margin:.3em 0}
+p{margin:.4em 0}
+.src{margin-top:auto;padding-top:.8em;border-top:1px solid var(--line);font-size:.82em;color:var(--mute)}
+.tag{display:inline-block;font-size:.76em;line-height:1.5;padding:0 .5em;margin-left:.35em;border-radius:3px;white-space:nowrap;vertical-align:.05em}
+.a{background:var(--slatebg);color:var(--slate)}
+.c{background:var(--amberbg);color:var(--amber)}
+.o{background:var(--tealbg);color:var(--teal)}
+.wrap{overflow-x:auto;margin:.5em 0}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:.92em}
+th,td{border:1px solid var(--line);padding:.35em .6em;text-align:left;vertical-align:top}
+th{background:#e9edf4}
+.box{background:var(--card);border:1px solid var(--line);padding:.6em .9em;margin:.7em 0}
+.board{display:grid;grid-template-columns:repeat(3,1fr);background:#161b26;color:#fff;margin:1em 0;max-width:560px}
+.board div{padding:.6em .9em;border-right:1px solid #2c3446}
+.board div:last-child{border-right:0}
+.board small{display:block;color:#9aa5bb;font-size:.78em}
+.board b{font-size:1.5em;font-variant-numeric:tabular-nums}
+.up{color:var(--up);font-weight:700}
+.down{color:var(--down);font-weight:700}
+.board .up{color:#ff6b6b}
+.board .down{color:#4cd48b}
+nav{position:fixed;left:0;right:0;bottom:0;height:56px;display:flex;align-items:center;justify-content:center;gap:1.2em;background:var(--ink);color:#fff}
+nav button{font:inherit;color:#fff;background:transparent;border:1px solid #8a94a8;padding:.25em 1.1em;cursor:pointer}
+nav button:focus-visible{outline:3px solid #ffd166;outline-offset:2px}
+</style>
+</head>
+<body>
+<main>
+
+<section class="slide on">
+<h1>股票是什麼？<br>新手第一堂課</h1>
+<p>台股入門：從「買股票是在買什麼」，到「為什麼不能只看漲跌」。</p>
+<div class="board" aria-label="漲跌停範例">
+<div><small>開盤競價基準</small><b>40.60</b></div>
+<div><small>漲停</small><b class="up">44.65</b></div>
+<div><small>跌停</small><b class="down">36.55</b></div>
+</div>
+<p style="font-size:.85em;color:var(--mute)">證交所的計算範例（第 4 頁說明為什麼不是 44.66 與 36.54）。台股習慣：紅色代表漲、綠色代表跌。</p>
+<div class="box">本簡報只使用「股票入門 LLM Wiki」的內容製作，僅供教學，不是投資建議。<br>
+標籤：<span class="tag a">作者觀點</span> 來源作者的主張，不是定論；<span class="tag c">待確認</span> 尚未被官方來源核對；<span class="tag o">官方</span> 政府或交易所資料。</div>
+<div class="src">資料來源：s01 市場先生（部落格）、s02 證交所（官方）、s03、s04 經理人（媒體）、s05 金管會（官方）；資料擷取日 2026-11-23。</div>
+</section>
+
+<section class="slide">
+<h2>股票是什麼？</h2>
+<ul>
+<li><b>股票是公司為了籌資，讓出一部分所有權的憑證。</b></li>
+<li>為什麼發行：向銀行借錢要付利息，發行股票籌資是另一種選擇。</li>
+<li>買了就成為股東，有投票權，但一般人持股很少，影響有限。</li>
+<li>怎麼賺：公司獲利時可以分紅，股價上漲時賣出可賺價差。</li>
+<li>風險：公司不賺錢時，投入的資金可能收不回來。</li>
+</ul>
+<div class="box">例子：你買了 A 公司的股票，A 公司拿到資金去做原本沒錢做的計畫；你拿到所有權憑證，成為 A 公司的股東。</div>
+<div class="src">來源：[s01]</div>
+</section>
+
+<section class="slide">
+<h2>股價是怎麼來的？</h2>
+<h3>為什麼會漲跌</h3>
+<ul>
+<li>股價反映兩件事：<b>公司的價值</b>，以及<b>人們的看法</b>。</li>
+<li>看法多半理性，但情緒或意外會讓股價劇烈漲跌。</li>
+</ul>
+<h3>怎麼成交</h3>
+<ul>
+<li>原則是<b>價格優先、時間優先</b>：買價高的先成交、賣價低的先成交，同價位先輸入的先成交。<span class="tag o">官方</span></li>
+<li>開盤與收盤用集合競價（找出成交量最大的價格），盤中用逐筆撮合。<span class="tag o">官方</span></li>
+<li>五檔報價是「還沒成交」的買賣委託，不是已成交的價格。</li>
+</ul>
+<div class="src">來源：[s01] [s02]</div>
+</section>
+
+<section class="slide">
+<h2>台股怎麼交易？（上市、集中市場）</h2>
+<div class="wrap"><table>
+<tr><th>時段</th><th>方式</th></tr>
+<tr><td>8:30～9:00</td><td>開盤，集合競價</td></tr>
+<tr><td>9:00～13:25</td><td>盤中，逐筆撮合</td></tr>
+<tr><td>13:25～13:30</td><td>收盤，集合競價</td></tr>
+<tr><td>零股：9:00～13:30、13:40～14:30</td><td>盤中零股每 5 秒撮合；盤後零股 14:30 一次撮合</td></tr>
+</table></div>
+<ul>
+<li>1 張 = 1,000 股；不足一張（1～999 股）是零股。</li>
+<li>每日價格上下限是<b>開盤競價基準的 10%</b>（原則上是前一日收盤價）。</li>
+<li>範例：基準 40.60 元，試算漲停 44.66、跌停 36.54，但此價位的升降單位是 0.05 元，所以實際是 <span class="up">44.65</span> 與 <span class="down">36.55</span>。</li>
+</ul>
+<p style="font-size:.88em">以上是證交所對上市證券的規定；上櫃與興櫃是否相同，本 wiki 尚未涵蓋。<span class="tag c">待補</span></p>
+<div class="src">來源：[s02] [s01]</div>
+</section>
+
+<section class="slide">
+<h2>買賣的成本與交割</h2>
+<ul>
+<li>手續費 <b>0.1425%</b>，買進、賣出各收一次（股票與 ETF 相同）。<span class="tag c">待確認</span></li>
+<li>證交稅：股票 <b>0.3%</b>，賣出時才收；ETF <b>0.1%</b>。<span class="tag c">待確認</span></li>
+<li>作者估算，一次買賣成本約 0.5%，買賣越頻繁，成本越高。<span class="tag a">作者觀點</span></li>
+<li>交割採 T+2：買進時，款項在成交日後第二營業日上午 10 時前交割。<span class="tag o">官方</span></li>
+<li>收到股利後，隔年要課股利所得稅（合併計稅與分離課稅取低者）；稅率細節本 wiki 尚未涵蓋。<span class="tag c">待補</span></li>
+</ul>
+<div class="box">為什麼標「待確認」：手續費與證交稅有兩篇非官方來源說法一致，但還缺證交所或財政部的官方資料；券商也常提供手續費折扣。</div>
+<div class="src">來源：[s01] [s03] [s02]</div>
+</section>
+
+<section class="slide">
+<h2>怎麼賺錢？價差、股利、除權息</h2>
+<ul>
+<li><b>價差</b>：10 元買進、12 元賣出，持有 1,000 股，賺 2,000 元。</li>
+<li><b>股利</b>：分現金股利（配息）與股票股利（配股）。</li>
+<li><b>除權息</b>：配 1 元現金，1,000 股領 1,000 元；但除息時股價也被扣掉 1 元，持股價值少了 1,000 元。</li>
+<li>作者主張：配息不是賺錢的來源，總資產沒有因此增加，要看公司獲利與整體市值成長。<span class="tag a">作者觀點</span></li>
+<li>不是所有 ETF 都配息：反向型、槓桿型，以及追蹤國外指數或特定商品的特別產品通常不配息。<span class="tag c">待確認</span></li>
+</ul>
+<div class="src">來源：[s01] [s03]</div>
+</section>
+
+<section class="slide">
+<h2>看懂常見指標</h2>
+<p>先看三大財報：資產負債表（有多少資產與負債）、損益表（賺了多少）、現金流量表（現金怎麼進出）。</p>
+<div class="wrap"><table>
+<tr><th>指標</th><th>公式</th><th>看什麼</th></tr>
+<tr><td>EPS</td><td>稅後淨利 ÷ 在外流通股數</td><td>每股賺多少</td></tr>
+<tr><td>ROE</td><td>稅後淨利 ÷ 股東權益</td><td>運用股東資金賺錢的效率</td></tr>
+<tr><td>ROA</td><td>稅後淨利 ÷ 總資產</td><td>運用資產的能力</td></tr>
+<tr><td>本益比</td><td>股價 ÷ EPS</td><td>約幾年回本，偏貴或偏便宜</td></tr>
+<tr><td>本淨比</td><td>股價 ÷ 每股淨值</td><td>股價相對淨值的高低</td></tr>
+<tr><td>殖利率</td><td>每股現金股利 ÷ 股價</td><td>每年配息的比例</td></tr>
+</table></div>
+<p>算例：股價 100 元、EPS 5 元，本益比 = 100 ÷ 5 = 20。沒有單一指標能保證判斷正確。</p>
+<p style="font-size:.88em">公式目前只有一篇非官方來源提供；市值的股數用「發行股數」或「流通在外股數」，兩篇來源說法不同。<span class="tag c">待確認</span></p>
+<div class="src">來源：[s04] [s01]</div>
+</section>
+
+<section class="slide">
+<h2>ETF 與個股有什麼不同？</h2>
+<div class="wrap"><table>
+<tr><th></th><th>個股</th><th>ETF</th><th>共同基金</th></tr>
+<tr><td>是什麼</td><td>單一公司的股票</td><td>追蹤指數的一籃子標的，在證券市場買賣</td><td>專業人士主動操作</td></tr>
+<tr><td>優點</td><td>成為股東、只付手續費與稅</td><td>分散、費用比共同基金低</td><td>專業管理、小額可分散</td></tr>
+<tr><td>缺點</td><td>波動大、難分散</td><td>只得到整體市場報酬</td><td>管理成本高、不保證賺錢</td></tr>
+</table></div>
+<p style="font-size:.88em">優缺點與費用比較是作者整理。<span class="tag a">作者觀點</span></p>
+<h3>金管會提醒</h3>
+<ul>
+<li>ETF 有「市價」與「淨值」兩種價格，市價可能溢價或折價；買到高溢價，可能因溢價收斂而虧損。<span class="tag o">官方</span></li>
+<li>長期投資可用定期定額買原型證券投資信託 ETF；期貨信託、槓桿、反向型 ETF 只適合極短期交易。<span class="tag o">官方</span></li>
+</ul>
+<div class="src">來源：[s01] [s05]</div>
+</section>
+
+<section class="slide">
+<h2>風險：你可能面對什麼？</h2>
+<ul>
+<li>風險就是不確定性：價格隨時在變動。</li>
+<li><b>系統性風險</b>（大盤）：再好的公司都可能下跌，無法靠分散避開。<b>非系統性風險</b>（個股）：可以靠分散降低。</li>
+<li>降低風險：分散投資；資產配置（目的是降低波動，不是提高報酬）；拉長時間。<span class="tag a">作者觀點</span></li>
+<li>制度緩衝：單日 10% 上下限；價格短時間波動超過 3.5% 時，暫緩撮合 2 分鐘。這只限制單日變動，不代表不會虧損。<span class="tag o">官方</span></li>
+<li>歷史波動：美股 S&amp;P 500 ETF（SPY）1994～2023 年，持有 1 年最高 <span class="up">+56.25%</span>、最低 <span class="down">−43.44%</span>；持有 15 年最低仍有 +3.67%。這是美股的歷史回測，不是預測。<span class="tag c">待確認</span></li>
+</ul>
+<div class="src">來源：[s01] [s02] [s05]</div>
+</section>
+
+<section class="slide">
+<h2>常見誤解與回顧</h2>
+<div class="wrap"><table>
+<tr><th>常見想法</th><th>來源怎麼說</th></tr>
+<tr><td>領股息就是賺錢</td><td>除息後股價同步下調，總資產不會因配息增加。<span class="tag a">作者觀點</span></td></tr>
+<tr><td>股價高就是貴</td><td>要看每家公司背後的資訊，不能只看股價高低。<span class="tag a">作者觀點</span></td></tr>
+<tr><td>分散投資就不會虧</td><td>大盤下跌時幾乎都跌，系統性風險無法分散。<span class="tag a">作者觀點</span></td></tr>
+<tr><td>所有 ETF 都適合長期持有</td><td>槓桿、反向、期貨信託 ETF 只適合極短期交易。<span class="tag o">官方</span></td></tr>
+<tr><td>ETF 買價一定等於淨值</td><td>市價由供需決定，可能溢價或折價。<span class="tag o">官方</span></td></tr>
+</table></div>
+<div class="box"><b>這份簡報還沒確定的事：</b>手續費與證交稅缺官方來源；指標公式只有單一來源；市值的股數定義不一致；上櫃與興櫃規則未涵蓋。</div>
+<div class="src">來源：[s01] [s05]；內容僅供教學，不是投資建議。</div>
+</section>
+
+</main>
+<nav>
+<button id="prev" type="button">上一頁</button>
+<span id="count" aria-live="polite">1 / 10</span>
+<button id="next" type="button">下一頁</button>
+</nav>
+<script>
+(function(){
+var s=Array.prototype.slice.call(document.querySelectorAll('.slide')),i=0,c=document.getElementById('count');
+function go(n){
+i=Math.max(0,Math.min(s.length-1,n));
+s.forEach(function(e,k){e.classList.toggle('on',k===i)});
+c.textContent=(i+1)+' / '+s.length;
+try{history.replaceState(null,'','#'+(i+1))}catch(e){}
+window.scrollTo(0,0);
+}
+document.getElementById('prev').onclick=function(){go(i-1)};
+document.getElementById('next').onclick=function(){go(i+1)};
+document.addEventListener('keydown',function(e){
+if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();go(i+1)}
+else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(i-1)}
+});
+var h=parseInt(location.hash.slice(1),10);
+go(h>0?h-1:0);
+})();
+</script>
+</body>
+</html>
